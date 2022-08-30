@@ -22,7 +22,7 @@ def run():
         print(recipe['uri'])
         print(recipe['calories'])
         print()
-# for loop to categorise recipe into suitable, potentially suitable and unsuitable recipes
+# for loop to categorise recipe into suitable, potentially suitable (within 100 cals) and unsuitable recipes
     for result in results:
         recipe = result['recipe']
         if recipe['calories'] < max_calories:
